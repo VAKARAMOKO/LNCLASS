@@ -12,8 +12,10 @@
 
   <body class=" bg-gray-200">
     <%= render "shared/nav/navbar" %>
-    <%= render 'layouts/partials/notices' %>
-    <%= yield %>
+    <div class="pt-16 md:m-2">
+      <%= render 'layouts/partials/notices' %>
+      <%= yield %>
+    </div>
     <%= render 'layouts/partials/footer_links' %>
   </body>
 </html>
