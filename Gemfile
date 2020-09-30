@@ -43,8 +43,9 @@ gem 'tailwindcss', '~> 1.0', '>= 1.0.3'
 #gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 
 
-############### URL BUILDER ###########
+############### FORM AND  URL BUILDER ###########
 gem 'friendly_id', '~> 5.4'
+gem 'simple_form', '~> 5.0', '>= 5.0.2'#http://simple-form-bootstrap.plataformatec.com.br/
 
 ############### JS ###########
 gem 'jquery-rails'
