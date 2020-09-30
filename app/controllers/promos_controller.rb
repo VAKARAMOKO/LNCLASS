@@ -25,18 +25,13 @@ class PromosController < ApplicationController
   # POST /promos
   # POST /promos.json
   def create
+    @promo             = current_user.promos.build(promo_params)
     @promo.school_code = current_user.school_code
-    @promo.user_id = current_user.id
-    @promo = promos.build(promo_params)
 
-    respond_to do |format|
-      if @promo.save
-        format.html { redirect_to @promo, notice: 'Promo was successfully created.' }
-        format.json { render :show, status: :created, location: @promo }
-      else
-        format.html { render :new }
-        format.json { render json: @promo.errors, status: :unprocessable_entity }
-      end
+    if @promo.save
+      redirect_to @promo, notice: 'Promo was successfully created.'
+    else
+     render :new
     end
   end
 
@@ -67,7 +62,7 @@ class PromosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_promo
-      @promo = Promo.find(params[:id])
+      @promo = Promo.friendly.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
