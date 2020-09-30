@@ -10,8 +10,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-
+  <body class=" bg-gray-200">
+    <%= render "shared/nav/navbar" %>
     <%= render 'layouts/partials/notices' %>
     <%= yield %>
     <%= render 'layouts/partials/footer_links' %>
