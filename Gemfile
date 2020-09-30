@@ -39,8 +39,8 @@ gem 'bootstrap-datepicker-rails', '~> 1.9', '>= 1.9.0.1'
 gem 'bootstrap_form', '~> 4.5' # More info:  https://github.com/bootstrap-ruby/bootstrap_form
 gem 'tailwindcss', '~> 1.0', '>= 1.0.3'
 
-############### ICONS ################
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+############### ICONS #################
+#gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 
 
 ############### URL BUILDER ###########
