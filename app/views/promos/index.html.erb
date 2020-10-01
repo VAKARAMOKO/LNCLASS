@@ -1,4 +1,5 @@
 
+<% content_for @title= "Accueil" %>
 
 <div class="card mt-40">
 
@@ -32,7 +33,7 @@
               </div>
             </h5>
             <div class="stats mb-4">
-              <p class='classroom-count'> classes</p>
+              <p class='classroom-count'><%= promo.classrooms.count %> classes</p>
 
             </div>
             <%= link_to  promo, class: 'btn btn-outline-info' do %>

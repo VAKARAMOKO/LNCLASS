@@ -68,7 +68,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   #ERRORS MESSAGES
-  gem 'best_errors', '~> 0.1.4'
+  #gem 'best_errors', '~> 0.1.4'
+  #gem "binding_of_caller"
 end
 
 group :test do

@@ -38,14 +38,10 @@ class PromosController < ApplicationController
   # PATCH/PUT /promos/1
   # PATCH/PUT /promos/1.json
   def update
-    respond_to do |format|
-      if @promo.update(promo_params)
-        format.html { redirect_to @promo, notice: 'Promo was successfully updated.' }
-        format.json { render :show, status: :ok, location: @promo }
-      else
-        format.html { render :edit }
-        format.json { render json: @promo.errors, status: :unprocessable_entity }
-      end
+    if @promo.update(promo_params)
+      redirect_to @promo, notice: 'Promo was successfully updated.'
+    else
+      render :edit
     end
   end
 
@@ -53,10 +49,7 @@ class PromosController < ApplicationController
   # DELETE /promos/1.json
   def destroy
     @promo.destroy
-    respond_to do |format|
-      format.html { redirect_to promos_url, notice: 'Promo was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to promos_url, notice: 'Promo was successfully destroyed.'
   end
 
   private

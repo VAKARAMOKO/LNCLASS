@@ -1,0 +1,19 @@
+
+<h3 class='d-flex justify-content-between mb-5 mt-12'>
+  <%= link_to 'Retour', promo_classroom_path(@promo, @classroom), class: 'btn btn-secondary mb-3' %>
+    <div>
+      <%= link_to  edit_promo_classroom_path(@promo, @classroom), class: 'btn btn-outline-primary font-bold' do %>
+           Classe <%= @classroom.title %>
+      <% end %>
+    </div>
+
+  <div class="card d-flex justify-content-between m-2">
+    <p class="font-bold m-2">Inscription dans la classe <%= @classroom.title %></p>
+    STUDENT FORM
+  </div>
+
+</h3>
+
+
+
+
