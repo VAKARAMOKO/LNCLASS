@@ -8,8 +8,10 @@
     </div>
 
   <div class="card d-flex justify-content-between m-2">
-    <p class="font-bold m-2">Inscription dans la classe <%= @classroom.title %></p>
-    STUDENT FORM
+  <%= link_to classroom_students_path(@classroom), class:"bg-white font-bold btn btn-outline-primary" do %>
+   <i class="fa fa-cercle-plus"></i> Inscription
+  <% end %>
+
   </div>
 
 </h3>
