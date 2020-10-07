@@ -1,7 +1,10 @@
 class Classroom < ApplicationRecord
+  #RELATIONS
   belongs_to :promo
+  has_many :students, dependent: :destroy
 
-  #slug
+
+  #SLUG
   extend FriendlyId
     friendly_id :title, use: :slugged
 

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  matricule: MyString
+  matricule_school: MyString
+  contact_student_1: MyString
+  contact_student_2: MyString
+  contact_parent_1: MyString
+  contact_parent_2: MyString
+  slug: MyString
+  classroom: one
+
+two:
+  username: MyString
+  matricule: MyString
+  matricule_school: MyString
+  contact_student_1: MyString
+  contact_student_2: MyString
+  contact_parent_1: MyString
+  contact_parent_2: MyString
+  slug: MyString
+  classroom: two
