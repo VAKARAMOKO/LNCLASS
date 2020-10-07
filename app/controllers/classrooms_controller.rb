@@ -54,7 +54,7 @@ class ClassroomsController < ApplicationController
     def set_classroom
       @classroom = @promo.classrooms.friendly.find(params[:id])
     end
-      def set_promo
+    def set_promo
       @promo = Promo.friendly.find(params[:promo_id])
     end
     # Only allow a trusted parameter "white list" through.
